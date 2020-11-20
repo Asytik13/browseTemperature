@@ -3,6 +3,7 @@ package com.example.springboot;
 import java.util.Scanner;
 
 public class UserInput {
+
     public static String getCityFromUser(){
         boolean isCityValid = false;
         String userInput = null;

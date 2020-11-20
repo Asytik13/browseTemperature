@@ -4,6 +4,27 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class WeatherService {
+
+private Double value;
+private String city;
+
+    public Double getValue() {
+        return value;
+    }
+
+    public void setValue(Double value) {
+        this.value = value;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+
     private static final Pattern tempPattern = Pattern.compile("^.*\"temp_c\":\\s*(.+?)\\s*,.*");
 
     public static Double getWeatherFor(String city) {
